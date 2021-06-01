@@ -27,3 +27,7 @@
 
 **Creating the Database:**
 - (ll_env) Desktop\python_projects\learning_log>**python manage.py migrate**
+  - Migrating the database: modifying the database
+  - this command tells Django to ensure the database matches the current state of the project.
+  - The first time running this command in a new project using SQLite, Django will create a new database.
+  - Now running dir would show db.sqlite3 in addition to the project folder and ll_env and manage.py file.
