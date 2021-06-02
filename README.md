@@ -53,3 +53,22 @@
 - A Django project is organized as a group of individual apps working together to make the project work as a whole.
 - (ll_env) Desktop\python_projects\learning_log>**python manage.py startapp learning_logs**
 - (ll_env) Desktop\python_projects\learning_log\learning_logs>**dir**
+
+- (ll_env) Desktop\python_projects\learning_log>**python manage.py makemigrations learning_logs**
+  - Migrations for 'learning_logs':
+    - learning_logs\migrations\0001_initial.py
+      - Create model Topic
+  - the makemigrations command tells Django to figure out how to modify the DB so it can store the data associated with any new models defined.
+
+- (ll_env) Desktop\python_projects\learning_log>**python manage.py migrate**
+  - Operations to perform:
+    - Apply all migrations: admin, auth, contenttypes, learning_logs, sessions
+  - Running migrations:
+    - Applying learning_logs.0001_initial... OK
+- This is to apply the migration and have Django modify the DB for us.
+
+**Setting up Admin Site:**
+- Only the site's admin use the admin site, no general users.
+- Django allows us to create a superuser (a user with all priviledges available on the site).
+- To create a super user: (ll_env) Desktop\python_projects\learning_log>python manage.py createsuperuser
+  - enter username, email, password to create the super user.
