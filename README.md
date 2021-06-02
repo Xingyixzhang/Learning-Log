@@ -46,3 +46,5 @@
   - Starting development server at http://127.0.0.1:8000/ reports the URL where the project is being served.
   - The URL indicates that the project is listening for requests on port 8000 on your computer, which is the localhost.
   - Localhost refers to a server that only processes requests on your system; it does not allow anyone else to see the pages you're developing.
+
+![Django development server default page on localhost](https://github.com/Xingyixzhang/Learning-Log/blob/main/learning_log/images/default_page_testing.png)
