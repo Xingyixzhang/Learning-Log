@@ -33,6 +33,8 @@
   - Now running dir would show db.sqlite3 in addition to the project folder and ll_env and manage.py file.
 
 **Viewing the Project:**
+
+![Django development server default page on localhost](https://github.com/Xingyixzhang/Learning-Log/blob/main/learning_log/images/default_page_testing.png)
 - (ll_env) Desktop\python_projects\learning_log>**python manage.py runserver**
   - Django starts a server called the development server. When requesting a page by entering a URL in browser, the Django server responds to that request by building the appropriate page and sending it to the browser.
   - Sample output process:
@@ -46,5 +48,3 @@
   - Starting development server at http://127.0.0.1:8000/ reports the URL where the project is being served.
   - The URL indicates that the project is listening for requests on port 8000 on your computer, which is the localhost.
   - Localhost refers to a server that only processes requests on your system; it does not allow anyone else to see the pages you're developing.
-
-![Django development server default page on localhost](https://github.com/Xingyixzhang/Learning-Log/blob/main/learning_log/images/default_page_testing.png)
