@@ -72,3 +72,12 @@
 - Django allows us to create a superuser (a user with all priviledges available on the site).
 - To create a super user: (ll_env) Desktop\python_projects\learning_log>**python manage.py createsuperuser**
   - enter **username, email, password** to create the super user.
+
+**Using Django Shell** (just like how we'd use py shell) 
+- (ll_env) Desktop\python_projects\learning_log>**python manage.py shell**
+- Each time modifying the models, we need to restart the shell to see the effects of those changes.
+- Windows: CTRL Z + Enter to exit Shell.
+
+**Making Web Pages with Django:**
+- Three Stages: defining URLs + Writing Views + Writing Templates
+- URL maps to a view, which often renders the page using a template, which contains the page's overall structure.
