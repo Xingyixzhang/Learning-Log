@@ -81,3 +81,7 @@
 **Making Web Pages with Django:**
 - Three Stages: defining URLs + Writing Views + Writing Templates
 - URL maps to a view, which often renders the page using a template, which contains the page's overall structure.
+
+**Thinking Further:**
+- Meal Planner
+- Menu Homepage
