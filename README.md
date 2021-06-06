@@ -82,6 +82,11 @@
 - Three Stages: defining URLs + Writing Views + Writing Templates
 - URL maps to a view, which often renders the page using a template, which contains the page's overall structure.
 
+**Setting up User Accounts:**
+- Create new app called users using the startapp command: **(ll_env) Desktop\python_projects\learning_log>python manage.py startapp users** -- this command will create an app folder with default migrations folder and other components.
+- Add this new App to INSTALLED_APPS in settings.py file so Django will include the *users* app in the overall project.
+
 **Thinking Further:**
 - Meal Planner
 - Menu Homepage
+- Blog (model BlogPost with fields like title, text, date_added ...)
