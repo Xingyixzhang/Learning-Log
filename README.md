@@ -86,6 +86,10 @@
 - Create new app called users using the startapp command: **(ll_env) Desktop\python_projects\learning_log>python manage.py startapp users** -- this command will create an app folder with default migrations folder and other components.
 - Add this new App to INSTALLED_APPS in settings.py file so Django will include the *users* app in the overall project.
 
+**Style web pages with Bootstrap:**
+- Install django-bootstrap4: **(ll_env) Desktop\python_projects\learning_log\ll_env\Scripts>pip install django-bootstrap4**
+- Add this third-party app django-bootstrap4 in INSTALLED_APPS in settings.py.
+
 **Thinking Further:**
 - Meal Planner
 - Menu Homepage
