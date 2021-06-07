@@ -90,6 +90,39 @@
 - Install django-bootstrap4: **(ll_env) Desktop\python_projects\learning_log\ll_env\Scripts>pip install django-bootstrap4**
 - Add this third-party app django-bootstrap4 in INSTALLED_APPS in settings.py.
 
+**Deploy Learning Log to a Live Server:**
+- **Heroku** is a web-based platform allowing you to manage the deployment of web apps. Running app on Live Server allows anyone with internet connection to use it.
+- The **psycopg2** package is *required* to manage the database Heroku uses.
+  - (ll_env) Desktop\python_projects\learning_log>**pip install psycopg2**
+- The **django-heroku** package handles almost entire config the app needs to run properly on Heroku Servers.
+  - (ll_env) Desktop\python_projects\learning_log>**pip install django-heroku**
+- The **gunicorn** package provides a server capable of serving apps in a live environment.
+  - (ll_env) Desktop\python_projects\learning_log>**pip install gunicorn**
+
+- (ll_env) Desktop\python_projects\learning_log>**pip freeze > requirements.txt**
+  - the **freeze** command tells pip to write the names of all the packages currently installed in the project into the file **requirements.txt**.
+
+- Configure Heroku settings in the settings.py (import django_heroku and django_heroku.settings(locals()))
+
+**Using Git to track Project Files:**
+- Initialize a Git repo for Learning Log, add all necessary files to the repo, and commit initial state of the project:
+  - (ll_env) Desktop\python_projects\learning_log>**git init**
+  - (ll_env) Desktop\python_projects\learning_log>**git add .**
+  - (ll_env) Desktop\python_projects\learning_log>**git commit -am "Ready for Deployment to Heroku."**
+  - (ll_env) Desktop\python_projects\learning_log>**git status**
+- Pushing to Heroku:
+  - (ll_env) Desktop\python_projects\learning_log>**heroku login**
+  - (ll_env) Desktop\python_projects\learning_log>**heroku create**
+  - (ll_env) Desktop\python_projects\learning_log>**git push heroku master**
+  - (ll_env) Desktop\python_projects\learning_log>**heroku ps** --> checking server process started properly.
+  - (ll_env) Desktop\python_projects\learning_log>**heroku open**
+- Setting up Database on Heroku:
+  - (ll_env) Desktop\python_projects\learning_log>**heroku run python manage.py migrate**
+- Create a User-Friendly URL on Heroku:
+  - (ll_env) Desktop\python_projects\learning_log>**heroku apps:rename learning-log**
+- Setting environment variable on Heroku:
+  - (ll_env) Desktop\python_projects\learning_log>**heroku config:set DEBUG='FALSE'**
+
 **Thinking Further:**
 - Meal Planner
 - Menu Homepage
